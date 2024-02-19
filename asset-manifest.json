@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/eartalk/static/css/main.f70fec20.css",
+    "main.js": "/eartalk/static/js/main.b6451981.js",
+    "static/js/453.0f2941ec.chunk.js": "/eartalk/static/js/453.0f2941ec.chunk.js",
+    "static/media/mouth.gif": "/eartalk/static/media/mouth.5e457f19d81e9037564a.gif",
+    "index.html": "/eartalk/index.html",
+    "static/media/volume-xmark-solid.svg": "/eartalk/static/media/volume-xmark-solid.cd34929a0cdb4c1d971642e61da75d59.svg",
+    "static/media/volume-low-solid.svg": "/eartalk/static/media/volume-low-solid.75edb3857beebf8b15706433c3be5ee7.svg",
+    "static/media/bars-solid.svg": "/eartalk/static/media/bars-solid.0c4d59725d80638c87fca2ca9ec1a3df.svg",
+    "static/media/pause-solid.svg": "/eartalk/static/media/pause-solid.fcb7674065d0c1c6835dbe69f39a1dab.svg",
+    "static/media/play-solid.svg": "/eartalk/static/media/play-solid.910051fd9a87dcf68de56bb2a4a1ff8e.svg",
+    "static/media/stop-solid.svg": "/eartalk/static/media/stop-solid.ef2efed8dba85abe312380cc7ac22d2b.svg",
+    "main.f70fec20.css.map": "/eartalk/static/css/main.f70fec20.css.map",
+    "main.b6451981.js.map": "/eartalk/static/js/main.b6451981.js.map",
+    "453.0f2941ec.chunk.js.map": "/eartalk/static/js/453.0f2941ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f70fec20.css",
+    "static/js/main.b6451981.js"
+  ]
+}
