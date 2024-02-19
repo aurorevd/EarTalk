@@ -40,7 +40,15 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      <Subtitles>
+        Welcome Jane. <br /> What would you like to talk about ?
+      </Subtitles>
 
+      <MainDiv>
+        <SearchBar />
+        <TopicsContainer/>
+        <CommandeLine />
+      </MainDiv>
      
     </div>
   );
