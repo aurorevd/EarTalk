@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const StyledTopicsContainer = styled.div`
   width: 50%;
+  height:25vh;
   display: flex;
   flex-wrap: wrap;
 row-gap:1vw;
@@ -27,23 +28,11 @@ function TopicsContainer() {
   return (
         <StyledTopicsContainer>
           <TopicButton>Science</TopicButton>
+          <TopicButton>Culture</TopicButton>
+          <TopicButton>Sport</TopicButton>
+          <TopicButton>Society</TopicButton>
           <TopicButton>History</TopicButton>
-          <TopicButton>Sport</TopicButton>
-          <TopicButton>Sport</TopicButton>
-          <TopicButton>Sport</TopicButton>
-          <TopicButton>Sport</TopicButton>
-          <TopicButton>Science</TopicButton>
-          <TopicButton>History</TopicButton>
-          <TopicButton>Sport</TopicButton>
-          <TopicButton>Sport</TopicButton>
-          <TopicButton>Sport</TopicButton>
-          <TopicButton>Sport</TopicButton>
-          <TopicButton>Science</TopicButton>
-          <TopicButton>History</TopicButton>
-          <TopicButton>Sport</TopicButton>
-          <TopicButton>Sport</TopicButton>
-          <TopicButton>Sport</TopicButton>
-          <TopicButton>Sport</TopicButton>
+          <TopicButton>Health</TopicButton>
         </StyledTopicsContainer>
   );
 }

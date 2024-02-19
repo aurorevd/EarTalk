@@ -17,24 +17,42 @@ const MainDiv = styled.div`
   height: 72vh;
 `;
 
+const useToggle = (initialState) => {
+  const [state, setState] = useState(initialState);
+  const toggle = () => setState((prevState) => !prevState);
+  return [state, toggle];
+};
+
 function App() {
-  const [play, setPlay] = useState(false);
-  const [volume, setVolume] = useState(false);
-  const [mute, setMute] = useState(false);
-  const [stop, setStop] = useState(false);
-  const [subtitles, setSubtitles] = useState(false);
-  const [speed, setSpeed] = useState(false);
-  const [noise, setNoise] = useState(false);
+  const [play, togglePlay] = useToggle(false);
+  const [volume, toggleVolume] = useToggle(false);
+  const [mute, toggleMute] = useToggle(false);
+  const [subtitles, toggleSubtitles] = useToggle(true);
+  const [speed, toggleSpeed] = useToggle(false);
+  const [noise, toggleNoise] = useToggle(false);
 
   return (
     <div className="App">
       <Header />
-      <Subtitles />
+      <Subtitles subtitles={subtitles}/>
       <MainDiv>
         <SearchBar />
         <TopicsContainer />
-        <Mouth />
-        <Command />
+        <Mouth play={play} setPlay={togglePlay} />
+        <Command
+          play={play}
+          setPlay={togglePlay}
+          volume={volume}
+          setVolume={toggleVolume}
+          mute={mute}
+          setMute={toggleMute}
+          subtitles={subtitles}
+          setSubtitles={toggleSubtitles}
+          speed={speed}
+          setSpeed={toggleSpeed}
+          noise={noise}
+          setNoise={toggleNoise}
+        />
       </MainDiv>
     </div>
   );

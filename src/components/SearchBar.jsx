@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 
 const StyledSearchBar = styled.input`
-  width: 250px;
-  height: 40px;
+  width: 16%;
+  height: 60px;
   border-radius: var(--radius);
 `;
 

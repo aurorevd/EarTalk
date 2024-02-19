@@ -16,9 +16,8 @@ const Logo = styled.img`
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
   &:hover {
-   scale: 1.1;
+    scale: 1.1;
   }
-
 `;
 const Level = styled.img`
   height: 3.5vh;
@@ -76,7 +75,7 @@ function Header() {
   return (
     <StyledHeader>
       <a href="/">
-      <Logo src={logo} />
+        <Logo src={logo} />
       </a>
       <Level src={level} />
       <LoginButton>
