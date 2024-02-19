@@ -24,22 +24,33 @@ Link to figma :https://www.figma.com/file/TfcPEz5pnBucgBS7hEwELG/eartalk?type=de
 
 ## Stacks
 React 
+
 Styled Components
 
 ## Start the app
 npm i
+
 npm start
 
 ## Colors
 purple:#9D56F7;
+
 blue: #18b7f7;
+
 red: #ea4c1d;
+
 pink: #ff9d93;
+
 yellow: #bca983;
+
 green: #08c87f;
+
 black: #010101;
+
 grey: #d9d9d9;
+
 darkgrey: #898484;
+
 lightgrey: #f7f7f7;
 
 ## Font
