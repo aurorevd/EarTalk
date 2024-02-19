@@ -17,7 +17,7 @@ const TopicButton = styled.button`
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 30px !important;
+  font-size:1vw;
   font-weight: 600;
   background-color: ${props => props.color};
   border: solid 1px var(--grey);

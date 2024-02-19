@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledSubtitles = styled.div`
-  width: 100%;
+  width: 50%;
   height: 15vh;
 `;
 

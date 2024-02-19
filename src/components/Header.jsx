@@ -20,7 +20,7 @@ const Logo = styled.img`
   }
 `;
 const Level = styled.img`
-  height: 3.5vh;
+ width: 13vw;
 `;
 
 const LoginButton = styled.button`

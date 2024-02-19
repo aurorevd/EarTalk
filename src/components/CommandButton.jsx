@@ -8,22 +8,23 @@ const StyledCommandButton = styled.div`
   align-items: center;
   box-shadow: var(--shadow);
   background-color: var(--black);
-  border: solid 1px var(--grey);
-  border-radius:50%;
+  border: solid 1px var(--darkgrey);
+  border-radius: 50%;
   padding: 5px;
   cursor: pointer;
 `;
 
 const StyledImg = styled.img`
-  width: 1.5vw;
-  max-height:40px;
-  color:white;
+  width: 2vw;
+  max-height: 1.8vw;
+  color: white;
+  object-fit: contain;
 `;
 
-function CommandButton({ src, onClick}) {
+function CommandButton({ src, onClick }) {
   return (
     <StyledCommandButton>
-      <StyledImg src={src} alt="" onClick={onClick}/>
+      <StyledImg src={src} alt="" onClick={onClick} />
     </StyledCommandButton>
   );
 }

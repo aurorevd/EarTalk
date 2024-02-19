@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import styled from "styled-components";
 import Header from "./components/Header";
@@ -6,6 +7,13 @@ import Subtitles from "./components/Subtitles";
 import SearchBar from "./components/SearchBar";
 import Command from "./components/Command";
 import Mouth from "./components/Mouth";
+
+const StyledApp = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+`;
 
 const MainDiv = styled.div`
   display: flex;
@@ -31,7 +39,7 @@ function App() {
   const [noise, toggleNoise] = useToggle(false);
 
   return (
-    <div className="App">
+    <StyledApp className="App">
       <Header />
       <Subtitles subtitles={subtitles}/>
       <MainDiv>
@@ -53,7 +61,7 @@ function App() {
           setNoise={toggleNoise}
         />
       </MainDiv>
-    </div>
+    </StyledApp>
   );
 }
 

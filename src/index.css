@@ -2,12 +2,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+ 
 }
 
 :root {
   --doc-height: 100%;
 }
+
 body {
   --purple:#9D56F7;
   --blue: #18b7f7;
@@ -31,3 +32,4 @@ body {
   color: var(--black);
   font-weight:bolder;
 }
+
