@@ -1,8 +1,7 @@
-import "./App.css";
 import styled from "styled-components";
-import logo from "./assets/EarTalk1.png";
-import level from "./assets/UserLevel.png";
-import hamburger from "./assets/bars-solid.svg";
+import logo from "../assets/EarTalk1.png";
+import level from "../assets/UserLevel.png";
+import hamburger from "../assets/bars-solid.svg";
 
 const StyledHeader = styled.header`
   display: flex;

@@ -1,4 +1,3 @@
-import "./App.css";
 import styled from "styled-components";
 
 const StyledTopicsContainer = styled.div`
@@ -8,7 +7,7 @@ const StyledTopicsContainer = styled.div`
 row-gap:1vw;
   justify-content: space-between;
 `;
-const TopicButton = styled.TopicButton`
+const TopicButton = styled.button`
   width: 7vw;
   height: 8vh;
   min-height: 50px;
