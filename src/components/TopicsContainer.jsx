@@ -17,11 +17,12 @@ const TopicButton = styled.button`
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 16px;
-  font-weight: black;
+  font-size: 30px !important;
+  font-weight: 600;
   background-color: ${props => props.color};
   border: solid 1px var(--grey);
   border-radius: var(--radius);
+  cursor: pointer;
 `;
 
 function TopicsContainer() {
