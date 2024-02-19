@@ -2,22 +2,32 @@
 
 ## Context
 Use case - Rehabilitation bot:
+
 Dialogue-based 💬
 The user shall be able to have a conversation with the rehabilitation assistant
+
 Adaptive 🧠
 Understand user responses and generate relevant replies in a clear context
+
 Engaging 😀
 Conversation modes offer a large variety of topics for the user to choose
-Parameters setup 🔧
-Possibility to control and adapt the interaction settings:
-The settings chosen by the end user will determine the difficulty level of the exercise
+
+Parameters setup 🔧 Possibility to control and adapt the interaction settings:
+
+The settings chosen by the end user will determine the difficulty level of the exercise:
+
 ● Background noise
+
 ● Speech length (words/sentences)
+
 ● Visual queues (off, subtitles, ...)
+
 ● Duration
+
 ● Conversation topic
-Monitoring 🔎
-Progress dashboard and recordings
+
+● Monitoring 🔎 Progress dashboard and recordings
+
 
 ## Prototype
 Link to figma :https://www.figma.com/file/TfcPEz5pnBucgBS7hEwELG/eartalk?type=design&node-id=0%3A1&mode=design&t=tisnKoLrK0oALrSy-1
