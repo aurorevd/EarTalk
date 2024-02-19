@@ -13,6 +13,12 @@ const StyledHeader = styled.header`
 `;
 const Logo = styled.img`
   width: 15vw;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+  &:hover {
+   scale: 1.1;
+  }
+
 `;
 const Level = styled.img`
   height: 3.5vh;
@@ -22,13 +28,23 @@ const LoginButton = styled.button`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
   width: 15vw;
   height: 5vh;
   background-color: white;
   border: solid 1px var(--grey);
   box-shadow: var(--shadow);
   border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out 0s;
+  &:active {
+    background-color: var(--lightgrey);
+    outline: 0;
+  }
+  &:hover {
+    background-color: var(--lightgrey);
+    outline: 0;
+  }
 `;
 const InitialUser = styled.p`
   width: 2vw;
@@ -47,16 +63,27 @@ const Icon = styled.img`
 `;
 const Text = styled.p`
   font-weight: 700;
+  font-size: 1vw;
+`;
+
+const FlexDiv = styled.div`
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
 `;
 
 function Header() {
   return (
     <StyledHeader>
+      <a href="/">
       <Logo src={logo} />
+      </a>
       <Level src={level} />
       <LoginButton>
-        <InitialUser>JB</InitialUser>
-        <Text>Jane Bayle</Text>
+        <FlexDiv>
+          <InitialUser>JB</InitialUser>
+          <Text>Jane Bayle</Text>
+        </FlexDiv>
         <Icon src={hamburger}></Icon>
       </LoginButton>
     </StyledHeader>
