@@ -1,16 +1,12 @@
 import "./App.css";
+import { useState } from "react";
 import styled from "styled-components";
 import Header from './components/Header'
 import TopicsContainer from "./components/TopicsContainer"
+import Subtitles from "./components/Subtitles";
+import SearchBar from "./components/SearchBar";
+import Command from "./components/Command";
 
-const Subtitles = styled.h1`
-  display: flex;
-  justify-content: center;
-  font-size: 2.7vw;
-  width: 100%;
-  height: 15vh;
-  font-weight: 800;
-`;
 const MainDiv = styled.div`
   display: flex;
   flex-direction: column;
@@ -18,36 +14,26 @@ const MainDiv = styled.div`
   width: 100%;
   height: 72vh;
 `;
-const SearchBar = styled.input`
-  width: 250px;
-  height: 40px;
-  border-radius: var(--radius);
-`;
 
-const CommandeLine = styled.div`
-  width: 32.7%;
-  height: 60px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  box-shadow: var(--shadow);
-  background-color: var(--lightgrey);
-  border: solid 1px var(--grey);
-  border-radius: var(--radius);
-`;
 
 function App() {
+
+  const [play, setPlay] = useState(false)
+  const [volume, setVolume] = useState(false)
+  const [mute, setMute] = useState(false)
+  const [stop, setStop] = useState(false)
+  const [subtitles, setSubtitles] = useState(false)
+  const[ speed, setSpeed] = useState(false)
+  const[ noise, setNoise] = useState(false)
+
   return (
     <div className="App">
       <Header/>
-      <Subtitles>
-        Welcome Jane. <br /> What would you like to talk about ?
-      </Subtitles>
-
+      <Subtitles/>
       <MainDiv>
         <SearchBar />
         <TopicsContainer/>
-        <CommandeLine />
+        <Command/>
       </MainDiv>
      
     </div>
